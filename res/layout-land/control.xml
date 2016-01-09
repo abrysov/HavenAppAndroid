@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/control_fl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/control_ll_customheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/control_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>
+        	
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/control_fl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@+id/control_fl_general"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:id="@+id/control_ll_sv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/control_fl_subtitles_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:paddingTop="3dip" android:paddingBottom="3dip" android:background="@color/black">
+
+                    <LinearLayout
+                        android:id="@+id/control_ll_subtitles_body"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <FrameLayout
+                            android:id="@+id/control_fl_left_string"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="10" >
+
+                            <TextView
+                                android:id="@+id/control_tv_left_string"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/controle_aspect_subheader"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/orange_for_topheader" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/control_fl_right_string"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="8" >
+
+                            <TextView
+                                android:id="@+id/control_tv_right_string"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/controle_kwaliteitsniveau"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/orange_for_topheader" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <ScrollView
+                    android:id="@+id/control_sv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="10" android:background="@color/black" android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/control_ll_subtitles"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <FrameLayout
+                    android:id="@+id/control_fl_button_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/bg_button_default" android:layout_marginTop="10dip">
+
+                    <TextView
+                        android:id="@+id/control_tv_button_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/control_button_submit"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

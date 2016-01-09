@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/info_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/info_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/info_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/info_fl_general"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:padding="20dip">
+
+        <LinearLayout
+            android:id="@+id/info_ll_elements"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/gray_for_topheader"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <FrameLayout
+                android:id="@+id/info_fl_the_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_border" android:layout_weight="10">
+
+                <ScrollView
+                    android:id="@+id/info_sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/info_ll_in_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/info_tv_the_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:freezesText="false"
+                            android:padding="10dip"
+                            android:text="Information about company."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/info_fl_for_helpbutt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:padding="10dip">
+
+                <FrameLayout
+                    android:id="@+id/info_fl_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_button_default">
+
+                    <TextView
+                        android:id="@+id/info_tv_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help_button_help"
+                        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_gravity="center" android:textColor="@color/black"/>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/info_fl_for_uitloggenbutt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:padding="10dip">
+
+                <FrameLayout
+                    android:id="@+id/info_fl_uitloggen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_button_default" >
+
+                    <TextView
+                        android:id="@+id/info_tv_unlogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/info_button_unlogin"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

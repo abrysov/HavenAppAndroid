@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/listbest_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/listbest_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/listbest_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/listbest_fl_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:padding="10dip">
+
+        <ListView
+            android:id="@+id/listbest_lv_elements"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </ListView>
+
+    </FrameLayout>
+
+</LinearLayout>

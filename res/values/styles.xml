@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textForDefaultHeader">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="layoutForDefaultHeader">
+        
+        <item name="android:padding">30dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10dip</item>
+    </style>
+    
+    
+    <style name="pictureElementsInCrow" 
+        >
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:textColor">@color/black</item>
+        
+    </style>
+    
+
+    
+    
+    <style name="mapViewStyle">
+    	<item name="android:gravity">center</item>
+	</style>
+    
+</resources>

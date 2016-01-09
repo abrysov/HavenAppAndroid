@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/enterlocation_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+            <LinearLayout
+            android:id="@+id/enterlocation_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@drawable/header_red_for_1280_portret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_red_for_1280_portret" android:visibility="gone"/>
+
+        	</LinearLayout>
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/enterlocation_fl_subheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f37735" android:visibility="gone">
+
+        <TextView
+            android:id="@+id/enterlocation_tv_subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Enter location"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/enterlocation_fl_general"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:background="#fff" android:padding="20dip">
+
+        <FrameLayout
+            android:id="@+id/enterlocation_fl_elements"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top" android:background="@color/gray_for_data_fields_bg" android:padding="20dip" android:layout_marginBottom="200dip" android:layout_marginLeft="100dip" android:layout_marginRight="100dip" android:layout_marginTop="100dip">
+
+            <LinearLayout
+                android:id="@+id/enterlocation_ll_elements"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_gravity="center">
+
+                <AutoCompleteTextView
+                    android:id="@+id/enterlocation_actv_enteraddr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginLeft="50dip" android:layout_marginRight="50dip" android:textSize="26dip" android:hint="Adres" android:textStyle="italic"/>
+
+                <Spinner
+                    android:id="@+id/enterlocation_s_adresses"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="10dip" android:layout_marginTop="10dip" android:layout_marginLeft="50dip" android:layout_marginRight="50dip"/>
+
+                <EditText
+                    android:id="@+id/enterlocation_et_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:longClickable="true"
+                    android:minHeight="380dip" android:textColor="@color/black" android:layout_marginLeft="50dip" android:layout_marginRight="50dip" android:textSize="26dip" android:hint="Opmerkingen" android:textStyle="italic"/>
+
+                <FrameLayout
+                    android:id="@+id/enterlocation_fl_fotbut"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dip" >
+
+                    <FrameLayout
+                        android:id="@+id/enterlocation_fl_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_button_default"
+                        android:padding="7dip" >
+
+                        <TextView
+                            android:id="@+id/enterlocation_tv_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/enterlocation_button_verder"
+                            android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black" android:textSize="23dip"/>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

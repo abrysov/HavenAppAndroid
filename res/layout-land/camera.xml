@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:id="@+id/camera_root">
+
+    <FrameLayout
+        android:id="@+id/camera_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/camera_ll_customheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/camera_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>        
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_fl_general"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/camera_ll_general"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/camera_fl_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+
+                <SurfaceView
+                    android:id="@+id/camera_sv_general"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_marginLeft="80dip" android:layout_marginRight="80dip" android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/camera_im_general"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:visibility="invisible" android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/camera_fl_getapic_butt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/camera_backing"
+                android:padding="10dip">
+
+                <FrameLayout
+                    android:id="@+id/camera_fl_camerabutt"
+                    android:layout_width="60dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_button_camera" >
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

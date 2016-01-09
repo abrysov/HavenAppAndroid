@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HavenApp</string>
+    <string name="holland_loginf_user_name">test@hitapp.com</string>
+    <string name="holland_loginf_password">test</string>
+    <string name="holland_loginf_login">Inloggen</string>
+    <string name="header_in_main_form">Haven Amsterdam</string>
+    <string name="mainf_totnav_back">Terug</string>
+    <string name="info_help">Help</string>
+    <string name="holland_info_logoff">Uitloggen</string>
+    <string name="details_straat">Straat</string>
+    <string name="details_datum">Datum</string>
+    <string name="details_status">Status</string>
+    <string name="details_gebiet">Gebied</string>
+    <string name="details_bestek">Bestek</string>
+    <string name="details_melder">Melder</string>
+    <string name="details_acceptabel">Acceptabel</string>
+    <string name="details_geconstatier">Geconstateerd</string>
+    <string name="controle_aspect_subheader">Aspect</string>
+    <string name="controle_kwaliteitsniveau">Kwaliteitsniveau</string>
+    <string name="help_button_help">Help</string>
+    <string name="info_button_unlogin">Uitloggen</string>
+    <string name="enterlocation_button_verder">Verder</string>
+    <string name="crow_button_submit">Verzenden</string>
+    <string name="control_button_submit">Verzenden</string>
+    <string name="enterloc_coments">Opmerkingen</string>
+    <string name="datails_about">Opmerkingen</string>
+
+</resources>

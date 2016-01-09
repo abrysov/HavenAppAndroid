@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rosberry.android.havenappandroid"
+    android:versionCode="1"
+    android:versionName="1.0" 
+   
+    >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:targetSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    
+
+    <application
+        android:icon="@drawable/haven_amsterdam2"
+        android:label="Haven App" 
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        android:debuggable="true"
+        
+        
+        >
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:name="com.rosberry.android.havenappandroid.HavenAppAndroidActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".activity.LoginForm" 
+            	
+            ></activity>
+        <activity android:name=".activity.Splash"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".activity.MainForm"></activity>
+        <activity android:name=".activity.CameraForm"
+            
+            >
+            
+        	</activity>
+        <activity android:name=".activity.EnterALocation"></activity>
+        <activity android:name=".activity.InfoForm"></activity>
+        <activity android:name=".activity.ListBestekspost"></activity>
+        <activity android:name=".activity.Crow"></activity>
+        <activity android:name=".activity.Control"></activity>
+        <activity android:name=".activity.Status"></activity>
+        <activity android:name=".activity.Details"></activity>
+        <activity android:name=".activity.Map"></activity>
+        <activity android:name=".activity.QuestionsList"></activity>
+        <activity android:name=".activity.AnswerForm"></activity>
+        <activity android:name=".activity.Map1"></activity>
+        <activity android:name=".activity.Map2"></activity>
+        <activity android:name=".activity.DeelForControl"></activity>
+        <activity android:name=".activity.ListBeskspost1"></activity>
+        <activity android:name=".activity.BestekspostListCustom"></activity>
+        <activity android:name=".activity.EnlargePhotoForm"
+            
+            ></activity>
+    </application>
+
+</manifest>

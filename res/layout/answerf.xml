@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/answerf_fl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/answerf_ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/answerf_fl_general"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dip" >
+
+        <ScrollView
+            android:id="@+id/answerf_sv_general"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/answerf_ll_general"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/answerf_fl_color_frame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dip" >
+
+                    <FrameLayout
+                        android:id="@+id/answerf_fl_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white" >
+
+                        <TextView
+                            android:id="@+id/answerf_tv_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dip"
+                            android:text="Answer"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

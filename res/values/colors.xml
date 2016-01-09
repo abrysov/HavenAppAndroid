@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="opaque_red">#f00</color>
+   
+   <color name="translucent_red">#80ff0000</color>
+   
+   <color name="orange">#f37735</color>
+   <color name="orange_transpanent">#f3773588</color>
+   
+   <color name="dirty_purpur">#9E9DB9</color>
+   <color name="light_purpur">#E0E0F1</color>
+   
+   <color name="gray_for_test_bg">#707089</color>
+   
+   <color name="gray_for_topheader">#e5e5e5</color>
+   <color name="orange_for_topheader">#ff6a08</color>
+   
+   <color name="gray_dark">#808080</color>
+   
+   <color name="gray_for_separator">#c3c3c3</color>
+   <color name="gray_for_data_fields_bg">#f3f3f3</color>
+   <color name="black">#000</color>
+   <color name="white">#FFF</color>
+   <color name="red">#F11</color>
+   <color name="green">#00FF00</color>
+   
+   <color name="red_for_red_theme_havenapp">#DE3238</color>
+   
+</resources>

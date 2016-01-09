@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/status_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/status_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/status_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_l" android:visibility="gone"/>
+
+        	</LinearLayout>
+        
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/status_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/status_ll_sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/status_fl_general"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <FrameLayout
+                    android:id="@+id/status_fl_elements"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minWidth="220dip"
+                    android:padding="15dip" >
+
+                    <LinearLayout
+                        android:id="@+id/status_ll_elements"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/gray_for_topheader"
+                        android:orientation="vertical"
+                        android:padding="10dip" >
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/crow_fl_topheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+            <LinearLayout
+            android:id="@+id/crow_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/crow_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>         
+        
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/crow_tv_subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" android:layout_marginTop="20dip" android:textSize="26dip"/>
+
+    <FrameLayout
+        android:id="@+id/crow_fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" >
+
+        <LinearLayout
+            android:id="@+id/crow_ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/crow_fl_leftright_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <HorizontalScrollView
+                    android:id="@+id/crow_hsv_leftright_scroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/crow_ll_leftright_scroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/crow_fl_navigation"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_margin="5dip"
+                android:background="@color/orange_for_topheader" >
+
+                <ImageView
+                    android:id="@+id/crow_iv_navigation_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/arrow_for_crow1" android:layout_gravity="right|center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/crow_iv_navigation_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/arrow_for_crow_left" android:layout_gravity="left|center_vertical"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/crow_fl_color_cubs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/crow_ll_redcolor_cub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="5dip" >
+
+                    <FrameLayout
+                        android:id="@+id/crow_fl_redcolor_cub"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_marginLeft="40dip"
+                        android:background="@color/green" >
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/crow_tv_redcolor_cub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="Afgesproken niveau"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000" android:textSize="23dip"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/crow_ll_greencolor_cub"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="30dip" >
+
+                    <FrameLayout
+                        android:id="@+id/crow_fl_greencolor_cub"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_marginLeft="40dip"
+                        android:background="@color/red" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/crow_tv_greencolor_cub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:text="Geconstateerde niveau"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000" android:textSize="23dip"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/crow_fl_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_default" android:layout_marginBottom="15dip" android:layout_gravity="center" android:layout_marginTop="15dip">
+
+        <TextView
+            android:id="@+id/crow_tv_button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/crow_button_submit"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black" android:textSize="23dip"/>
+
+    </FrameLayout>
+
+</LinearLayout>

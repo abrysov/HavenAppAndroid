@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/map_fl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+            <LinearLayout
+            android:id="@+id/map_ll_customheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/map_iv_pic_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_p" android:visibility="gone"/>
+
+        	</LinearLayout>
+        	
+    </FrameLayout>
+    
+    
+
+    
+
+</LinearLayout>
+
+<!-- 
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview1"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:enabled="true"
+        android:clickable="true"
+        android:apiKey="0q7NUYm4bgzeXlqXtKYVPJDRWUJmt8Cu0gvbWMx"
+        />
+
+        <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:clickable="true"
+        android:apiKey="09CeDjCtNRoccb8FFo4HK1cZpanGuqRsiHdtyjw"
+        />
+
+ -->

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_b_melding"
+       
+       android:title="Melding"
+       
+        />
+        
+    <item android:id="@+id/menu_b_status"
+        android:title="Status"
+        
+        />
+    <item android:id="@+id/menu_b_controle"
+       android:title="Controle"
+       
+        />
+        
+    <item android:id="@+id/menu_b_info"
+        android:title="Info" 
+        />
+
+</menu>

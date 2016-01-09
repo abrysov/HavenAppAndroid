@@ -1,0 +1,62 @@
+
+	===== Working process ====
+	
+##	Custom inflait (from http://stackoverflow.com/questions/7937127/create-a-custom-imagebutton-class-with-framelayout-and-textview)
+	
+	
+If you are just trying to create a view from the xml and add it to the layout. Just use the LayoutInflater.
+
+Inside the activity use something like
+
+FrameLayout frame = (FrameLayout)getLayoutInfalter.inflate(
+        R.id.YOUR_VIEW_XML,null);
+layout.addView(frame);
+If you are trying to create a class extend the frame layout or the the view. Create a constructor which takes your parameters and assign's the required values.
+
+EDIT: To Acess Elements Inside If you have set id's to those element, you can access them by
+
+TextView text = (TextView)frame.findViewById(R.id.yourtextview);
+Or you can use the child index like
+
+TextView text = (TextView)frame.getChildAt(0);
+
+
+##	For custom buts 
+	
+	
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" 
+    	  android:state_pressed="false" 
+    	  <!--  android:drawable="@android:drawable/grey_button_background_focus_blue" 
+    	  
+    	  />
+    <item android:state_focused="true" 
+    	  android:state_pressed="true"
+    	  
+    	  <!--android:drawable="@android:drawable/grey_button_background_pressed_blue"   
+    	  
+    	  />
+    <item android:state_focused="false" 
+    	  android:state_pressed="true"
+	  <!-- android:drawable="@android:drawable/grey_button_background_pressed_blue" 
+	  
+	  />
+    <item 
+        <!--  android:drawable="@android:drawable/grey_button_background_normal"
+        
+        />
+        </selector>
+
+
+##	Working with camera
+	
+	http://marakana.com/forums/android/examples/39.html
+
+## Working with spinner
+
+http://stackoverflow.com/questions/2399086/how-to-use-spinner
+
+
+        
+    

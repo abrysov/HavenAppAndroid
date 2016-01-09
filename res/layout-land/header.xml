@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/header_fl_mainheder"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#f00" >
+
+        <ImageView
+            android:id="@+id/header_iv_mainheder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_temp_cust_buttons"
+            android:minWidth="200dip" />
+
+        <TextView
+            android:id="@+id/header_tv_mainheder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MAIN HEADER"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/header_fl_subheder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f90" >
+
+        <TextView
+            android:id="@+id/header_tv_subheder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sub header"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+</LinearLayout>
